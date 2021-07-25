@@ -1,0 +1,12 @@
+<div class="header">
+  <button class="home-button" [routerLink]="'/home'">Home</button>
+</div>
+<div class="main">
+  <div class="input-wrapper">
+    <app-calculator-input #calculatorInput [result]="result"></app-calculator-input>
+  </div>
+  <div class="history-wrapper">
+    <app-calculation-history
+      [history]="calculationHistoryService.calculationHistory$ | async"></app-calculation-history>
+  </div>
+</div>

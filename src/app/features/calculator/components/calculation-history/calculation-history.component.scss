@@ -1,0 +1,43 @@
+:host {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  min-width: 400px;
+  max-width: 400px;
+  border: 1px solid white;
+  margin: 20px;
+  padding: 0 12px 12px 12px;
+  border-radius: 8px;
+}
+
+.calculation-row{
+  text-align: start;
+  margin-top: 12px;
+  min-height: 30px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.timestamp {
+  padding: 4px 8px;
+  background-color: gray;
+  border-radius: 20px;
+  margin-inline-end: 20px;
+  width: 110px;
+  max-width: 110px;
+  text-align: center;
+}
+
+.calculation {
+  letter-spacing: 0.1rem;
+  flex: 1;
+  min-width: 0;
+  max-width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  border-bottom: 1px solid gray;
+  padding: 4px 8px;
+}

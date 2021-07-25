@@ -1,0 +1,38 @@
+.header{
+  min-height: 40px;
+  text-align: end;
+  padding: 10px 20px;
+}
+
+.home-button{
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 8px;
+  color: white;
+  padding: 12px 20px;
+
+  &:hover{
+    background-color: lightgray;
+    transition: background-color 200ms linear;
+    color: black;
+    cursor: pointer;
+  }
+}
+
+.main{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-top: 40px;
+}
+
+.input-wrapper{
+  flex-basis: 50%;
+  text-align: center;
+}
+
+.history-wrapper{
+  flex-basis: 50%;
+  text-align: center;
+}

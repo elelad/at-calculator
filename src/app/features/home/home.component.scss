@@ -1,0 +1,24 @@
+:host{
+
+}
+.main{
+  margin: 20% auto;
+  text-align: center;
+}
+
+.calculator-button{
+  margin-top: 40px;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 8px;
+  color: white;
+  padding: 12px 20px;
+  font-size: 1.5rem;
+
+  &:hover{
+    background-color: lightgray;
+    transition: background-color 200ms linear;
+    color: black;
+    cursor: pointer;
+  }
+}

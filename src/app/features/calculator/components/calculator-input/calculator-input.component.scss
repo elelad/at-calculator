@@ -1,0 +1,70 @@
+:host {
+  font-size: 2rem;
+}
+
+.input-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.result{
+  display: inline-block;
+  min-width: 200px;
+  max-width: 200px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-inline-start: 10px;
+  text-align: start;
+  line-height: 30px;
+}
+
+.equation-input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid white;
+  color: white;
+  padding: 6px 12px;
+  font-size: 1.5rem;
+  width: 250px;
+  max-width: 250px;
+
+  &:focus-visible{
+    outline: none;
+    border-color: yellow;
+  }
+
+  &::placeholder{
+    font-size: 1rem;
+  }
+}
+
+.equation-input.ng-dirty.ng-invalid {
+  border-color: rgba(241, 130, 141, 1);
+}
+
+.calculate-button {
+  margin-top: 40px;
+  background-color: lightgray;
+  color: black;
+  border: 2px solid white;
+  border-radius: 8px;
+  padding: 12px 20px;
+  font-size: 1.5rem;
+
+  &[disabled] {
+    opacity: 0.5;
+  }
+
+  &:not([disabled]):hover {
+    background-color: transparent;
+    color: white;
+    transition: background-color 200ms linear;
+    cursor: pointer;
+  }
+}
+
+.info{
+  font-size: 0.8rem;
+}

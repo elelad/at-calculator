@@ -1,0 +1,5 @@
+<h1>History</h1>
+<div *ngFor="let h of history; trackBy: trackByFn" class="calculation-row">
+  <span class="timestamp">{{h.timestamp | date : 'd/M/yy, hh:mm '}}</span>
+  <span class="calculation">{{h.calculation}}</span>
+</div>
