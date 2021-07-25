@@ -1,4 +1,4 @@
-import { Component, ElementRef, EventEmitter, Input, OnInit, Output, ViewChild } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-calculator-input',
@@ -10,22 +10,20 @@ export class CalculatorInputComponent implements OnInit {
   @Output() calculate: EventEmitter<string> = new EventEmitter();
   value: string = '';
 
-  @ViewChild('calculationInput')
-  private calculationInput!: ElementRef<HTMLInputElement>;
-  @ViewChild('calculateButton')
-  private calculateButton!: ElementRef<HTMLInputElement>;
-
-
+  valueNotChanged = false;
 
   constructor() {
   }
 
-  ngOnInit(): void {
+  ngOnInit(): void { }
 
+  onInput(){
+    this.valueNotChanged = false;
   }
 
   onCalculateClicked(){
     this.calculate.emit(this.value);
+    this.valueNotChanged = true;
   }
 
 }

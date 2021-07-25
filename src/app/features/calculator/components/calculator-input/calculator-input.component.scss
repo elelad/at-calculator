@@ -41,7 +41,11 @@
 }
 
 .equation-input.ng-dirty.ng-invalid {
-  border-color: rgba(241, 130, 141, 1);
+  border-color: red;
+}
+
+.equation-input.ng-dirty.ng-valid {
+  border-color: lightgreen;
 }
 
 .calculate-button {

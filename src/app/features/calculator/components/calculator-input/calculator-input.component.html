@@ -1,12 +1,12 @@
 <form>
   <div class="input-box">
     <input #inputEl="ngModel" name="inputEl" type="text" required [(ngModel)]="value"
-           placeholder="Waiting for your equation..." class="equation-input"
-           pattern="(^\d+)(\d+|\-(?=\d)|\+(?=\d)|\*(?=\d)|\.(?=\d)|\/(?=[1-9]|0\.)+)*(\d$)"/>
+           placeholder="Waiting for your equation..." class="equation-input" autocomplete="off"
+           pattern="(^\d+)(\d+|\-(?=\d)|\+(?=\d)|\*(?=\d)|\.(?=\d)|\/(?=[1-9]|0\.)+)*(\d$)" (input)="onInput()"/>
     <span class="result"> = {{result | number}}</span>
   </div>
-  <button (click)="onCalculateClicked()" class="calculate-button" [disabled]="inputEl.errors?.pattern || inputEl.errors?.required">Calculate</button>
+  <button (click)="onCalculateClicked()" class="calculate-button" [disabled]="inputEl.invalid || valueNotChanged">Calculate</button>
 </form>
-<p class="info">Supported characters: numbers (including decimal), +, -, *, /, </p>
+<p class="info">Supported characters: numbers (including decimal), +, -, *, /</p>
 
 
