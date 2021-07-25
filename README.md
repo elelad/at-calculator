@@ -1,5 +1,7 @@
 # Calculator
 
+Working example here: https://elelad.github.io/at-calculator/
+
 ## Calculation Logic
 
 The calculation works based on those steps:
@@ -14,8 +16,9 @@ For example, the equation string is: `2+3*2-1`
 - We iterate on the array and adding or subtracting based on the operator
 
 ## Run locally
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`.
+- Run `npm i`
+- If you get any errors try to delete the `package-lock.json` and the `node_modules` and install again. 
+- Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`.
 
 ## Run unit tests
 
