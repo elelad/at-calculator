@@ -1,4 +1,4 @@
-# Atera - Calculator
+# Calculator
 
 ## Calculation Logic
 
