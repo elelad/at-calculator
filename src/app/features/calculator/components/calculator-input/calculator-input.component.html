@@ -1,6 +1,6 @@
 <form>
   <div class="input-box">
-    <input #inputEl="ngModel" name="inputEl" type="text" inputmode="numeric" required [(ngModel)]="value"
+    <input #inputEl="ngModel" name="inputEl" type="text" required [(ngModel)]="value"
            placeholder="Waiting for your equation..." class="equation-input" autocomplete="off"
            pattern="(^\d+)(\d+|\-(?=\d)|\+(?=\d)|\*(?=\d)|\.(?=\d)|\/(?=[1-9]|0\.)+)*(\d$)" (input)="onInput()"/>
     <span class="result"> = {{result | number}}</span>
