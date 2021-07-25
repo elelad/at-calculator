@@ -23,3 +23,8 @@ For example, the equation string is: `2+3*2-1`
 ## Run unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+
+
+## Deploy
+- Run `ng build --output-path docs --base-href /at-calculator/`
+- Make a copy of `docs/index.html` and name it `docs/404.html`
